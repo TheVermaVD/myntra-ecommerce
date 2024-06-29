@@ -9,10 +9,10 @@ export default function Cart({cartData, setCartData}) {
 
   return ( <>
 
-  <div className="container my-4 " style= {{maxWidth: "54%"}}>
+  <div className="container my-4 " style= {{maxWidth: "54%", minHeight:"65%"}}>
 
 
-    {cartData.length==0 ?   
+    {cartData.length===0 ?   
     
     
     (<div className="text-center">
@@ -28,7 +28,7 @@ export default function Cart({cartData, setCartData}) {
 
     return <Fragment key={item.id}>
          
-        <div  className="card mb-3 my-4" style= {{maxWidth: "700px"}}>
+        <div  className="card mb-3 my-4" style= {{maxWidth: "650px"}}>
           <div className="row g-0">
             <div className="col-md-4">
               <img src={item.img} className="img-fluid rounded-start" alt="..." />
@@ -52,7 +52,7 @@ export default function Cart({cartData, setCartData}) {
 
   }
 
-  {cartData.length != 0 &&   <div className="container text-center">
+  {cartData.length !== 0 &&   <div className="container text-center">
     <button className='btn btn-warning mx-3'>Checkout</button>
     <button className='btn btn-danger' onClick={()=>setCartData("") }>Clear Cart</button>
     </div>   }

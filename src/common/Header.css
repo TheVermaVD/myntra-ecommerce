@@ -17,7 +17,7 @@ body{
     width: 80%;
     text-align: center;
     position: relative;
-    /* border: 1px solid red; */
+   
     /* display: inline-block; */
 }
 
@@ -47,6 +47,17 @@ body{
     width: 10%;
     text-align: center;
 }
+
+/* For Footer Component CSS */
+
+/* .footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: aqua;
+    
+} */
 
 
 
